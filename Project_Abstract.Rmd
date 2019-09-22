@@ -1,0 +1,39 @@
+---
+title: "Application Abstract"
+author: "Chris VanKerkhove"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+![](C:/Users/cvankerk/Desktop/Project/A&D.png)
+
+## About
+
+The purpose of this project is as an introductory analysis for the Data Science internship at Excellus BlueCross BlueShield. This dashboard in, R Shiny, contains interactive graphs, maps, and tests in order to explore the relationship between Health Care Proffresionals' (HCP) Influenza vaccination rate and the total outbreak of the flu throughout New York. This R shiny dashboard contains visual representations of this data and these relationships when certain constraints on variables are applied such as sorting by county, year, HCP type, facilty type etc. The two datsa sets for this project were taken as public available data sets from https://health.data.ny.gov 
+
+
+## Dashboard Layout
+
+This R Shiny APP contains three seperate sections:
+
+-TAB 1: contains two sub-tabs
+
+  1.1: Contains two side by side interactiv emaps of New York state split up by counties. The choropleth map through the Leaflet package allows for a display of densities in colories of (1) the rate of vaccinations among HCP in that county (whether the rate measure is vacciantes or Unvaccinated), and (2) the total reported cases of influenza in that the county.
+  
+-TAB 2: This tab contains two sub-tabs
+
+  2.1: Contains a scatterplot of Reported Flu cases vs. HCP vaccination rate. Furthermore, there are widgets to adjust the plot accordingly, such as to eliminate outliers etc. Underneath the plot is a box containing two correlation tests (Pearson and Spearman).
+  
+  2.2: This tab contains the filtered and joined table of the two data sets used to create the scatterplot
+  
+-TAB 3:
+
+  3.1: Contains two plots of bar graphs each depicting the trend of the mean of the vaccination rates over seasons starting at 2013-2014 to 2017-2018. The first graph groups by HCP type while the second graph groups by facility type.
+  
+  3.2: Contains a boxplot and violin plot for the distribution of vaccination rates for a set of data points (each data point represents a vaccination rate for single HCP in a single county for a single year in a single facility). This data is grouped by HCP type and can be further filtered using the widgets on the dashboard. Furthermore, there is a T-test for difference in means between two specified HCP types.
+  
+  3.3: This tab is identical to the previous tab (3.2), however, in this case the data points are grouped by facility type, and once again there is a T-test for diference in means between two specified facility types. 
+  
