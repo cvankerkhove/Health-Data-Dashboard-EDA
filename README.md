@@ -8,6 +8,6 @@ Directions for downloading and running this application:
 3.) Run the install_packages.r package to install all relevant packages used in the R dashboard
 4.) In R, make your working directory whatever folder you saved all the files to
 5.) In the file Application_Dashboard.R, click "RunApplciation"
-All further directions for use of the application are provided within the applciation.
+All further directions for use of the application are provided within the application.
 
 Enjoy!
